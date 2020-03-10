@@ -1,0 +1,14 @@
+syntax="proto3";
+package proto;
+
+service Slave {
+    rpc GetVersion(GetVersionRequest) returns (GetVersionResponse);
+}
+
+message GetVersionRequest {
+    int32 who = 1;
+}
+
+message GetVersionResponse {
+    int32 iam = 1;
+}

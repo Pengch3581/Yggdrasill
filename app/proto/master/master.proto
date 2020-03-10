@@ -1,0 +1,15 @@
+syntax="proto3";
+package proto;
+
+service Master {
+    // 获取版本号
+    rpc GetVersion(GetVersionRequest) returns (GetVersionResponse);
+}
+
+message GetVersionRequest {
+    int32 who = 1;
+}
+
+message GetVersionResponse {
+    int32 iam = 1;
+}
