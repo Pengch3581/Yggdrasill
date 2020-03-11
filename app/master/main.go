@@ -2,7 +2,7 @@ package main
 
 import (
 	"log"
-	"github.com/Yggdrasill/app/master/cmd"
+	"master/cmd"
 )
 
 
